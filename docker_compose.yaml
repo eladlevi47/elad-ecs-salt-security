@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  flaskapp:
+    build: ./flaskapp-docker
+    image: flaskapp:${TAG}
+    container_name: flaskapp
+    network_mode: host
+
+  nginx:
+    build: ./nginx
+    image: nginx:${TAG}
+    container_name: nginx
+    network_mode: host
