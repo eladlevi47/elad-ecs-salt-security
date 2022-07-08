@@ -1,3 +1,7 @@
+######################
+### Security group ###
+######################
+
 resource "aws_security_group" "app_lb_sg" {
   name        = "allow_http"
   description = "Allow http inbound traffic"
